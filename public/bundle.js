@@ -87,7 +87,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Reload Void app'
+	          'Reload Void '
 	        ),
 	        _react2.default.createElement(_AwesomeComponent2.default, null)
 	      );
@@ -20277,7 +20277,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20299,41 +20299,36 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var AwesomeComponent = function (_React$Component) {
-	    _inherits(AwesomeComponent, _React$Component);
+	  _inherits(AwesomeComponent, _React$Component);
 	
-	    function AwesomeComponent(props) {
-	        _classCallCheck(this, AwesomeComponent);
+	  function AwesomeComponent(props) {
+	    _classCallCheck(this, AwesomeComponent);
 	
-	        var _this = _possibleConstructorReturn(this, (AwesomeComponent.__proto__ || Object.getPrototypeOf(AwesomeComponent)).call(this, props));
+	    return _possibleConstructorReturn(this, (AwesomeComponent.__proto__ || Object.getPrototypeOf(AwesomeComponent)).call(this, props));
+	  }
 	
-	        _this.setState({
-	            startImg: _this.imgs,
-	            imgs: ['./img/artic.jpg', './img/backstar.jpg']
-	        });
-	        return _this;
+	  _createClass(AwesomeComponent, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {}
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {}
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Awesome'
+	        )
+	      );
 	    }
+	  }]);
 	
-	    _createClass(AwesomeComponent, [{
-	        key: 'componentWillMount',
-	        value: function componentWillMount() {}
-	    }, {
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {}
-	    }, {
-	        key: 'onLike',
-	        value: function onLike() {}
-	    }, {
-	        key: 'sayHello',
-	        value: function sayHello() {}
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            console.log(this.state);
-	            return _react2.default.createElement('div', null);
-	        }
-	    }]);
-	
-	    return AwesomeComponent;
+	  return AwesomeComponent;
 	}(_react2.default.Component);
 	
 	exports.default = AwesomeComponent;

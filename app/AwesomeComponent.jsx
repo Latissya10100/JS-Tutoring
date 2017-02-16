@@ -4,15 +4,8 @@ import axios from 'axios';
 class AwesomeComponent extends React.Component {
 
     constructor(props) {
-    super(props);
+        super(props);
 
-        this.setState({
-           startImg: this.imgs,
-            imgs: [
-                './img/artic.jpg',
-                './img/backstar.jpg'
-            ]
-        });
     }
 
     componentWillMount() {

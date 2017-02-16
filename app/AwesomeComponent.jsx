@@ -16,16 +16,7 @@ class AwesomeComponent extends React.Component {
 
     }
 
-    onLike() {
-
-    }
-
-    sayHello() {
-
-    }
-
   render() {
-        console.log(this.state);
     return (
       <div>
         <h1>Awesome</h1>

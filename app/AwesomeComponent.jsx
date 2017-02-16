@@ -35,7 +35,7 @@ class AwesomeComponent extends React.Component {
         console.log(this.state);
     return (
       <div>
-
+        <h1>Awesome</h1>
       </div>
     );
   }

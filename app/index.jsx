@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Admin from './admin.jsx';
 import { Router, Route, Link, hashHistory, IndexRoute } from 'react-router'
 
 const Index = ({}) =>
@@ -26,9 +27,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-          <h1>Reload Void </h1>
-          <Link to="/about">About</Link>
-          {this.props.children}
+          <Admin />
       </div>
     );
   }
